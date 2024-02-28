@@ -47,7 +47,7 @@ const SearchForm: React.FC<PropsType> = (props) => {
                         <Field autoFocus type="text" name="searchStr" className={styles.inputSearch} placeholder="Search jokes..." />
 
                         {(props.count > 0) && <div className={styles.searchCountResult}>Found jokes: {props.count}</div>}
-                        {(props.count == 0) && <div className={styles.searchCountResult}>Nothing found</div>}
+                        {(props.count === 0) && <div className={styles.searchCountResult}>Nothing found</div>}
                     </Form>
                 </Formik>
             </Col>
