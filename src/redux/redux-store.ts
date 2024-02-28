@@ -1,6 +1,7 @@
 import {
   applyMiddleware,
   combineReducers,
+  compose,
   legacy_createStore as createStore,
 } from "redux";
 import { thunk as thunkMiddleware } from "redux-thunk";
@@ -22,5 +23,4 @@ const store = createStore(
   rootReducer,
   composeEnhancers(applyMiddleware(thunkMiddleware))
 );
-
 export default store;
