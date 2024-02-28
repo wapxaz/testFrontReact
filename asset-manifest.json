@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/testFrontReact/static/css/main.c9e31269.css",
+    "main.js": "/testFrontReact/static/js/main.3ee6b4ff.js",
+    "static/media/FiraSans-Black.ttf": "/testFrontReact/static/media/FiraSans-Black.4c9288bb30d14640b378.ttf",
+    "static/media/Montserrat-Black.ttf": "/testFrontReact/static/media/Montserrat-Black.beacc26b4bbaaf608567.ttf",
+    "static/media/Montserrat-Light.ttf": "/testFrontReact/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "index.html": "/testFrontReact/index.html",
+    "main.c9e31269.css.map": "/testFrontReact/static/css/main.c9e31269.css.map",
+    "main.3ee6b4ff.js.map": "/testFrontReact/static/js/main.3ee6b4ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9e31269.css",
+    "static/js/main.3ee6b4ff.js"
+  ]
+}
