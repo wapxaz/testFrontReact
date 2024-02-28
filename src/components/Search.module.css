@@ -1,0 +1,66 @@
+.inputSearch {
+    margin-top: 10%;
+    margin-bottom: 20px;
+    height: 64px;
+    color: #656EC2;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'FiraSans';
+    border-radius: 0;
+    padding: 5px 20px;
+    box-shadow: 3px 5px .5em rgba(100, 100, 111, 0.2), -3px 5px .5em rgba(100, 100, 111, 0.2);
+    border: 1px solid rgba(100, 100, 111, 0.1);
+    width: 100%;
+}
+.inputSearch::placeholder {
+    color: #656EC2;
+  }
+  .searchCountResult {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat Light';
+    margin-left: 20px;
+  }
+
+  .bigCard,
+  .smallCard {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    box-shadow: 3px 5px .5em rgba(100, 100, 111, 0.2), -3px 5px .5em rgba(100, 100, 111, 0.2);
+    border-radius: 0;
+  }
+  .bigCard .text,
+  .smallCard .text {
+    font-size: 14px;
+    font-family: 'Montserrat Light';
+    color: #282626;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  .bigCard .id,
+  .smallCard .id,
+  .bigCard .date,
+  .smallCard .date {
+    font-size: 14px;
+    font-family: 'Montserrat Light';
+    color: #767676;
+    overflow:hidden;
+    text-wrap: nowrap;
+}
+  .bigCard .date,
+  .smallCard .date {
+    text-align: right;
+}
+  .bigCard .text {
+    font-size: 20px;
+    height: 234px;
+  }
+  .smallCard .text {
+    font-size: 16px;
+    height: 122px;
+  }
+
+  .wrap {
+    padding: 0px 50px;
+    padding-top: 50px;
+  }
