@@ -13,7 +13,7 @@ const SearchResultElement: React.FC<PropsType> = ({ text, id, date, url, typeCar
     return (
         <Col xs={24} sm={12} md={typeCard === "bigCard" ? 12 : 8}>
             <a href={url} target='_blank' rel="noreferrer">
-                <Card className={typeCard == "bigCard" ? styles.bigCard : styles.smallCard}>
+                <Card className={typeCard === "bigCard" ? styles.bigCard : styles.smallCard}>
                     <Row className={styles.text}>
                         {text}
                     </Row>
