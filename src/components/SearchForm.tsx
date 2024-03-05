@@ -2,6 +2,7 @@ import React from 'react';
 import { Field, Form, Formik } from 'formik';
 import { Col, Row, Spin } from 'antd';
 import { useDispatch } from 'react-redux';
+import { DebounceInput } from 'react-debounce-input';
 import { AppDispatch, getSearchResult } from '../redux/search-reducer';
 import styles from './Search.module.css';
 import { useSelector } from 'react-redux';
@@ -40,11 +41,12 @@ const SearchForm: React.FC<PropsType> = (props) => {
                         //console.log(actions);
                     }}
                 >
-
-                    <Form onChange={(values: any) => {
-                        getData(values.target.value);
-                    }}>
-                        <Field autoFocus type="text" name="searchStr" className={styles.inputSearch} placeholder="Search jokes..." />
+                    <Form>
+                        <DebounceInput
+                            autoFocus type="text" name="searchStr" className={styles.inputSearch} placeholder="Search jokes..."
+                            debounceTimeout={1000}
+                            onChange={event => (getData(event.target.value))}
+                        />
 
                         {(props.count > 0) && <div className={styles.searchCountResult}>Found jokes: {props.count}</div>}
                         {(props.count === 0) && <div className={styles.searchCountResult}>Nothing found</div>}
